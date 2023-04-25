@@ -1,0 +1,40 @@
+
+body {
+    background-color: #FFA500;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.button {
+    background-color: #4CAF50; /* green */
+    border: none;
+    color: white;
+    padding: 18px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3e8e41; /* darker green */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41; /* darker green */
+}

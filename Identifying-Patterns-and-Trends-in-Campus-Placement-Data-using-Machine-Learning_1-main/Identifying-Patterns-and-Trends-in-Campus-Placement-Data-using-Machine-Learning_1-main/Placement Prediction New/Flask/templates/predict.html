@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Page</title>
+    <style>
+        /* Style for the form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for the form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+/* Style for the page header */
+.page-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <form action="/Register" method="POST" autocomplete="off">
+        <div class="col-md-offset-3 col-md-4">
+            <h3 class="page-header text-primary">Registration</h3>
+            <div class="form-group">
+                <label>Age:</label>
+                <input type="number" name="age" placeholder="Enter Your Age" class="form-control" required>
+            </div><br>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="number" name="gender" placeholder="Male(1), Female(0)" class="form-control" required>
+            </div><br>
+            <div class="form-group">
+                <label>Stream:</label>
+                <input type="number" name="stream" placeholder="ECE(1), CS(2), IT(3), Mech(4), Elec(5), Civil(6)" class="form-control" required>
+            </div><br>
+            <div class="form-group">
+                <label>Internships:</label>
+                <input type="number" name="internships" placeholder="Internships" class="form-control" required>
+            </div><br>
+            <div class="form-group">
+                <label>CGPA:</label>
+                <input type="number" name="cgpa" placeholder="CGPA" class="form-control" required>
+            </div><br>
+            <div class="form-group">
+                <label>No_of_Backlog:</label>
+                <input type="number" name="no_of_backlog" placeholder="No of Backlog" class="form-control" required>
+            </div><br><br>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Submit" class="btn-success">
+                <input type="reset"  value="Clear" class="btn-danger">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
